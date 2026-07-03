@@ -1,0 +1,65 @@
+[05:36:07]  Bank initialised – 6 accounts loaded
+[05:36:07]  Resource table initialised: 5 processes, 3 resource types
+[05:36:07]  [FCFS                ] Avg Wait = 12.50 ms  |  Avg Turnaround = 18.00 ms
+[05:36:07]  [Priority Scheduling ] Avg Wait = 12.67 ms  |  Avg Turnaround = 18.17 ms
+[05:36:07]  [Round Robin         ] Avg Wait = 18.17 ms  |  Avg Turnaround = 23.67 ms
+[05:36:07]  [THREAD] Hamza-T1      >>  Withdraw 1200.00  (Acct 269801)
+[05:36:07]  WITHDRAW OK     [Hamza-T1    ] -  1200.00 -> Acct 269801   | New Balance:    6300.00
+[05:36:07]  [THREAD] Hamza-T2      >>  Withdraw 800.00  (Acct 269801)
+[05:36:07]  WITHDRAW OK     [Hamza-T2    ] -   800.00 -> Acct 269801   | New Balance:    5500.00
+[05:36:07]  [THREAD] Bilal-D1      >>  Deposit  275.00  (Acct 269802)
+[05:36:07]  DEPOSIT  OK     [Bilal-D1    ] +   275.00 -> Acct 269802   | New Balance:   14275.00
+[05:36:07]  [THREAD] Saad-D1       >>  Deposit  450.00  (Acct 269802)
+[05:36:07]  DEPOSIT  OK     [Saad-D1     ] +   450.00 -> Acct 269802   | New Balance:   14725.00
+[05:36:07]  [THREAD] Zaryab-D1     >>  Deposit  350.00  (Acct 269802)
+[05:36:07]  DEPOSIT  OK     [Zaryab-D1   ] +   350.00 -> Acct 269802   | New Balance:   15075.00
+[05:36:07]  DEPOSIT  OK     [Staff-10    ] +   650.00 -> Acct 269804   | New Balance:   22650.00
+[05:36:07]  DEPOSIT  OK     [Staff-09    ] +   650.00 -> Acct 269804   | New Balance:   23300.00
+[05:36:07]  DEPOSIT  OK     [Staff-08    ] +   650.00 -> Acct 269804   | New Balance:   23950.00
+[05:36:07]  DEPOSIT  OK     [Staff-07    ] +   650.00 -> Acct 269804   | New Balance:   24600.00
+[05:36:07]  DEPOSIT  OK     [Staff-06    ] +   650.00 -> Acct 269804   | New Balance:   25250.00
+[05:36:07]  DEPOSIT  OK     [Staff-05    ] +   650.00 -> Acct 269804   | New Balance:   25900.00
+[05:36:07]  DEPOSIT  OK     [Staff-04    ] +   650.00 -> Acct 269804   | New Balance:   26550.00
+[05:36:07]  DEPOSIT  OK     [Staff-03    ] +   650.00 -> Acct 269804   | New Balance:   27200.00
+[05:36:07]  DEPOSIT  OK     [Staff-02    ] +   650.00 -> Acct 269804   | New Balance:   27850.00
+[05:36:07]  DEPOSIT  OK     [Staff-01    ] +   650.00 -> Acct 269804   | New Balance:   28500.00
+[05:36:07]  Payroll complete – 10 staff members paid from Acct 269804
+[05:36:07]  [THREAD] Omar-VIP      >>  Withdraw 3000.00  (Acct 269805)
+[05:36:07]  WITHDRAW OK     [Omar-VIP    ] -  3000.00 -> Acct 269805   | New Balance:   15500.00
+[05:36:07]  [THREAD] Bilal-Reg     >>  Deposit  500.00  (Acct 269801)
+[05:36:07]  DEPOSIT  OK     [Bilal-Reg   ] +   500.00 -> Acct 269801   | New Balance:    6000.00
+[05:36:07]  LOAN APPROVED [Zaryab]
+[05:36:07]  LOAN DENIED [Saad]: resources unavailable
+[05:36:07]  LOAN DENIED [Hamza]: request > max need
+[05:36:07]  LOAN APPROVED [Omar]
+[05:36:07]  [IPC] Bank server process  PID = 839
+[05:36:07]  [SERVER] Bank server online – queue id=5
+[05:36:07]  [CLIENT 3] Saad       sending Deposit    request | Amount: 1500.00
+[05:36:07]  [SERVER] Received Deposit    from Saad         | Acct 269803   | Amt 1500.00
+[05:36:07]  DEPOSIT  OK     [Saad        ] +  1500.00 -> Acct 269803   | New Balance:    4700.00
+[05:36:07]  [SERVER] Reply sent to Client 3: Transaction OK. Updated Balance: PKR 4700.00
+[05:36:07]  [CLIENT 3] Response: Transaction OK. Updated Balance: PKR 4700.00
+[05:36:07]  [CLIENT 5] Omar       sending Withdrawal request | Amount: 4000.00
+[05:36:07]  [SERVER] Received Withdrawal from Omar         | Acct 269805   | Amt 4000.00
+[05:36:07]  WITHDRAW OK     [Omar        ] -  4000.00 -> Acct 269805   | New Balance:   11500.00
+[05:36:07]  [SERVER] Reply sent to Client 5: Transaction OK. Updated Balance: PKR 11500.00
+[05:36:07]  [CLIENT 5] Response: Transaction OK. Updated Balance: PKR 11500.00
+[05:36:07]  [CLIENT 1] Hamza      sending Deposit    request | Amount: 750.00
+[05:36:07]  [SERVER] Received Deposit    from Hamza        | Acct 269801   | Amt 750.00
+[05:36:07]  DEPOSIT  OK     [Hamza       ] +   750.00 -> Acct 269801   | New Balance:    6750.00
+[05:36:07]  [CLIENT 1] Response: Transaction OK. Updated Balance: PKR 6750.00
+[05:36:07]  [SERVER] Reply sent to Client 1: Transaction OK. Updated Balance: PKR 6750.00
+[05:36:08]  [CLIENT 2] Zaryab     sending Withdrawal request | Amount: 300.00
+[05:36:08]  [SERVER] Received Withdrawal from Zaryab       | Acct 269802   | Amt 300.00
+[05:36:08]  WITHDRAW OK     [Zaryab      ] -   300.00 -> Acct 269802   | New Balance:   14775.00
+[05:36:08]  [CLIENT 2] Response: Transaction OK. Updated Balance: PKR 14775.00
+[05:36:08]  [SERVER] Reply sent to Client 2: Transaction OK. Updated Balance: PKR 14775.00
+[05:36:08]  [CLIENT 4] TechVentures sending Deposit    request | Amount: 5000.00
+[05:36:08]  [SERVER] Received Deposit    from TechVentures | Acct 269804   | Amt 5000.00
+[05:36:08]  DEPOSIT  OK     [TechVentures] +  5000.00 -> Acct 269804   | New Balance:   33500.00
+[05:36:08]  [CLIENT 4] Response: Transaction OK. Updated Balance: PKR 33500.00
+[05:36:08]  [SERVER] Reply sent to Client 4: Transaction OK. Updated Balance: PKR 33500.00
+[05:36:08]  [SERVER] Served 5 requests. Shutting down.
+[05:36:08]  [IPC] Message queue removed. Demo complete.
+[05:36:08]  Memory (3 frames) – FIFO faults=13  LRU faults=17  Winner=FIFO
+[05:36:08]  Memory (4 frames) – FIFO faults=13  LRU faults=13  Winner=Tie
